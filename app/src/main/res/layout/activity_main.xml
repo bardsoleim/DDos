@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="58dp">
+
+        <TextView
+            android:textColor="@color/textcolor"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text=" Select your target"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/textcolor"
+                android:id="@+id/url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL " />
+
+            <EditText
+
+                android:background="@color/textbackground"
+                android:id="@+id/urlTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="http://www.">
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/lockOnURLButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lock On" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/textcolor"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP " />
+
+            <EditText
+                android:background="@color/textbackground"
+                android:id="@+id/ip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="." />
+
+            <EditText
+                android:background="@color/textbackground"
+                android:id="@+id/ip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="." />
+
+            <EditText
+                android:background="@color/textbackground"
+                android:id="@+id/ip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="." />
+
+            <EditText
+                android:background="@color/textbackground"
+                android:id="@+id/ip4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/lockOnIpButton"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lock On" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#22000000"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Selected Target:"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:id="@+id/selectedTargetTV"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="@color/foreground"
+            android:gravity="center"
+            android:text="NONE"
+            android:textColor="@color/fire"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:background="@drawable/rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+
+
+
+
+    </LinearLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+   </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
